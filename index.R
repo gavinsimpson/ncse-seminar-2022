@@ -188,7 +188,8 @@ p1 <- ggplot(smooth) +
 smooth_funs <- animate(
     p1 + transition_states(draw, transition_length = 4, state_length = 2) + 
     ease_aes('cubic-in-out'),
-    nframes = 200, height = anim_height, width = anim_width, res = anim_res, dev = anim_dev)
+    nframes = 200, height = anim_height, width = anim_width, res = anim_res,
+    dev = anim_dev)
 
 anim_save('resources/spline-anim.gif', smooth_funs)
 

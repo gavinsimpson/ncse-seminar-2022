@@ -452,7 +452,8 @@ p1 <- ggplot(smooth) +
 smooth_funs <- animate(
     p1 + transition_states(draw, transition_length = 4, state_length = 2) + 
     ease_aes('cubic-in-out'),
-    nframes = 200, height = anim_height, width = anim_width, res = anim_res, dev = anim_dev)
+    nframes = 200, height = anim_height, width = anim_width, res = anim_res,
+    dev = anim_dev)
 
 anim_save('resources/spline-anim.gif', smooth_funs)
 ```
@@ -463,7 +464,8 @@ anim_save('resources/spline-anim.gif', smooth_funs)
 
 ???
 
-GAMs use splines to represent the non-linear relationships between covariates, here `x`, and the response variable on the `y` axis.
+GAMs use splines to represent the non-linear relationships between covariates,
+here `x`, and the response variable on the `y` axis.
 
 ---
 
@@ -681,17 +683,15 @@ options(op)
 # Picking the right wiggliness
 
 .pull-left[
-Two ways to think about how to optimize $\lambda$:
+2 ways to think about how to optimize $\lambda$:
 
 * Predictive: Minimize out-of-sample error
 * Bayesian:  Put priors on our basis coefficients
 ]
 
 .pull-right[
-Many methods: AIC, Mallow's $C_p$, GCV, ML, REML
-
-* **Practically**, use **REML**, because of numerical stability
-* Hence `gam(..., method = "REML")`
+* **Practically**: use **REML**, because of numerical stability
+* (Figure modified from Wood, 2011, J. R. Stat. Soc. B)
 ]
 
 .center[

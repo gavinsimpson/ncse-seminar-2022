@@ -306,7 +306,8 @@ background-size: contain
 
 ???
 
-GAMs use splines to represent the non-linear relationships between covariates, here `x`, and the response variable on the `y` axis.
+GAMs use splines to represent the non-linear relationships between covariates,
+here `x`, and the response variable on the `y` axis.
 
 ---
 
@@ -444,17 +445,15 @@ the spline coefficients `\(B_k\)` that maximize the **penalized** log-likelihood
 # Picking the right wiggliness
 
 .pull-left[
-Two ways to think about how to optimize `\(\lambda\)`:
+2 ways to think about how to optimize `\(\lambda\)`:
 
 * Predictive: Minimize out-of-sample error
 * Bayesian:  Put priors on our basis coefficients
 ]
 
 .pull-right[
-Many methods: AIC, Mallow's `\(C_p\)`, GCV, ML, REML
-
-* **Practically**, use **REML**, because of numerical stability
-* Hence `gam(..., method = "REML")`
+* **Practically**: use **REML**, because of numerical stability
+* (Figure modified from Wood, 2011, J. R. Stat. Soc. B)
 ]
 
 .center[

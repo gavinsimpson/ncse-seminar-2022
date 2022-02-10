@@ -10,7 +10,8 @@ contact:
     family-names: Simpson
     given-names: Gavin
 date-released: "2022-02-09"
-doi: ""
+doi: "10.5281/zenodo.6033546"
+version: "1.0"
 keywords:
   - "biodiversity"
   - "time series"

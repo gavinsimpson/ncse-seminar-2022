@@ -9,6 +9,8 @@
 Slides & related R code for a talk that gave as part of the National Centre for
 Statistical Ecology seminar series, Feb 9th, 2022.
 
+Rendered slidedeck: https://gavinsimpson.github.io/ncse-seminar-2022/
+
 #### Abstract
 
 Climate change and other human-caused environmental disturbance may lead to
